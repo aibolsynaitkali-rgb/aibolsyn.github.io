@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Айболсын | Сетевая безопасность</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-main: #c9d1d9;
+            --text-heading: #ffffff;
+            --accent-color: #58a6ff;
+            --tag-bg: #21262d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--text-heading);
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: var(--accent-color);
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: var(--text-heading);
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .tag {
+            background-color: var(--tag-bg);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 8px;
+            padding-left: 18px;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--tag-bg);
+            color: var(--accent-color);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--border-color);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Айболсын</h1>
+            <p class="subtitle">Студент • Сетевая безопасность</p>
+        </header>
+
+        <section class="card">
+            <h2>О себе</h2>
+            <p>Привет! Я увлекаюсь компьютерными сетями и защитой информации. Стремлюсь развиваться в сфере информационной безопасности, изучать современные методы защиты данных и расширять свой кругозор.</p>
+        </section>
+
+        <section class="card">
+            <h2>Языки</h2>
+            <div class="tags">
+                <span class="tag">Казахский (родной)</span>
+                <span class="tag">Русский (свободно)</span>
+                <span class="tag">English (профессиональный)</span>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Интересы и увлечения</h2>
+            <ul>
+                <li><strong>Психология & Литература:</strong> Люблю читать книги о человеческом поведении и мышлении. Среди любимых — <em>«Цветы для Элджернона»</em> Дэниела Киза и <em>«1984»</em> Джорджа Оруэлла.</li>
+                <li><strong>Онлайн-манга:</strong> В свободное время читаю мангу и слежу за новыми графическими историями.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Контакты</h2>
+            <div class="links">
+                <a href="mailto:your-email@example.com" class="btn">Email</a>
+                <a href="https://github.com" class="btn" target="_blank">GitHub</a>
+                <a href="https://t.me/yourusername" class="btn" target="_blank">Telegram</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
